@@ -1,8 +1,8 @@
 {
-  "name": "conduit-angularjs",
+  "name": "frontend-interview-base",
   "version": "1.0.0",
-  "description": "Angular frontend for Conduit",
-  "author": "Thinkster",
+  "description": "AngularJS frontend test for Admetricks",
+  "author": "Admetricks",
   "license": "MIT",
   "dependencies": {
     "angular": "^1.5.0-rc.2",
