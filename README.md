@@ -6,6 +6,4 @@ This example AngularJS app will give you everything you need to get started with
 
 1. Clone the repo
 2. Install the dependencies with `npm install`
-3. Run the app `gulp`
-
-Make sure you have gulp installed globally (`npm install -g gulp`)
+3. Execute `gulp` (global install) or `npx gulp` (if local install only) to run the app
