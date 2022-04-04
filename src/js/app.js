@@ -25,7 +25,7 @@ const requires = [
 ];
 
 // Mount on window for testing
-window.app = angular.module('app', requires);
+window.app = angular.module('app', requires)
 
 angular.module('app').constant('AppConstants', constants);
 

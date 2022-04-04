@@ -9,9 +9,47 @@
   <main class="container page">
     <section class="row">
       <!-- Main view -->
-      <div class="col-12">
-        <div>
-          <p>ℹ️ Insert your chart component in here</p>
+      <div class="col-12 btn-block">
+        <div class="row flex-items-sm-center">
+          <chart-component />
+        </div>
+      </div>
+
+      <div class="col-12 btn-block">
+        <div class="row flex-items-sm-center" ng-controller="MyController">
+          <div class="m-x-2">
+            <h1 class="text-xs-center">Falabella</h1>
+            <div class="row">
+              <div class="m-x-2">
+                <button class="btn btn-primary font-weight-bold" ng-Click="clickAction('decrement', 'falabella', 'reach', 0.10)" ng-disabled="falabella.reach < 0.1">-</button>
+                Reach {{ falabella.reach }}
+                <button class="btn btn-primary font-weight-bold" ng-Click="clickAction('increment', 'falabella', 'reach', 0.10)" ng-disabled="falabella.reach > 0.9">+</button>
+              </div>
+              
+              <div>
+                <button class="btn btn-primary font-weight-bold" ng-Click="clickAction('decrement', 'falabella', 'frequency', 1)" ng-disabled="falabella.frequency < 1">-</button>
+                Frequency {{ falabella.frequency }}
+                <button class="btn btn-primary font-weight-bold" ng-Click="clickAction('increment', 'falabella', 'frequency', 1)" ng-disabled="falabella.frequency > 9">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="m-x-2">
+            <h1 class="text-xs-center">Paris</h1>
+            <div class="row">
+              <div class="m-x-2">
+                <button class="btn btn-warning font-weight-bold" ng-Click="clickAction('decrement', 'paris', 'reach', 0.10)" ng-disabled="paris.reach < 0.1">-</button>
+                Reach {{ paris.reach }}
+                <button class="btn btn-warning font-weight-bold" ng-Click="clickAction('increment', 'paris', 'reach', 0.10)" ng-disabled="paris.reach > 0.9">+</button>
+              </div>
+              
+              <div>
+                <button class="btn btn-warning font-weight-bold" ng-Click="clickAction('decrement', 'paris', 'frequency', 1)" ng-disabled="paris.frequency < 1">-</button>
+                Frequency {{ paris.frequency }}
+                <button class="btn btn-warning font-weight-bold" ng-Click="clickAction('increment', 'paris', 'frequency', 1)" ng-disabled="paris.frequency > 9">+</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
